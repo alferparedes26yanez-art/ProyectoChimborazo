@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explore - Chimborazo Rey</title>
+    
+    <!-- Agregamos las fuentes premium para que los modales se vean elegantes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Chimborazo Travel Explore</h1>
+        <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
+            <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
+            <li><a href="travel.html" data-i18n="travel">Travel</a></li>
+            <li><a href="restaurantes.html" data-i18n="restaurantes">restaurantes</a></li>
+        </ul>
+    </nav>
+    </header>
+
+   <main>
+    <h2 class="intro" style="color: white; margin-bottom: 3rem;" data-i18n="travel_title">NUESTRAS EXPEDICIONES Y TOURS</h2>
+
+    <!-- TOUR 1: Cumbre Chimborazo -->
+    <article class="tour-card">
+        <div class="tour-image-container">
+            <img src="Imagenes/Cumbre Volcan.jpeg" alt="Cumbre Chimborazo" class="tour-image">
+            <button class="btn-favorite">♡</button>
+            <div class="tour-badge">
+            </div>
+        </div>
+        
+        <div class="tour-details">
+            <div class="tour-header">
+                <div class="tour-title-section">
+                    <h3 data-i18n="tour1_title">Cumbre Volcán Chimborazo</h3>
+                    <span data-i18n="tour1_loc">Reserva de Producción de Fauna Chimborazo</span>
+                </div>
+                <div class="tour-rating">
+                    <div class="rating-text">
+                        <span class="rating-word" data-i18n="rating_fantastic">Fantástico</span>
+                        <span class="rating-reviews">238 comentarios</span>
+                    </div>
+                    <div class="rating-score">9,5</div>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-highlights">
+                <div class="highlight-item">
+                    <span data-i18n="t1_h1">- Vista panorámica del Chimborazo y sus arenales</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="level_high">- Nivel físico alto - técnico</span>
+                </div>
+                <div class="highlight-item">
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="t1_h3"> - Páramo andino con flora y fauna endémica</span>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-footer">
+                <div class="tour-includes">
+                    <div class="include-item"><span class="include-icon">🚌</span><span data-i18n="inc_transport">Transporte</span></div>
+                    <div class="include-item"><span class="include-icon">🧗‍♂️</span><span data-i18n="inc_guides">Guías ASEGUIM</span></div>
+                    <div class="include-item"><span class="include-icon">🛏️</span><span data-i18n="inc_lodging">Refugio</span></div>
+                    <div class="include-item"><span class="include-icon">🍽️</span><span data-i18n="inc_food">Alimentación</span></div>
+                </div>
+                <div class="tour-price-action">
+                    <div class="tour-price-info">
+                        <span class="price-label" data-i18n="price_label">Precio por persona</span>
+                        <span class="price-amount">US$300</span>
+                    </div>
+                    <!-- AQUÍ SE ENLAZA CON EL MODAL 1 -->
+                    <a href="#" class="btn-consultar" data-modal="modal-tour1" data-i18n="btn_consult">Consultar el tour</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- TOUR 2: Descenso en bicicleta -->
+    <article class="tour-card">
+        <div class="tour-image-container">
+            <img src="Imagenes/Decenso en Bicicleta.jpeg" alt="Descenso en Bicicleta" class="tour-image">
+            <button class="btn-favorite">♡</button>
+            <div class="tour-badge">
+            </div>
+        </div>
+        
+        <div class="tour-details">
+            <div class="tour-header">
+                <div class="tour-title-section">
+                    <h3 data-i18n="tour2_title">Descenso en bicicleta del Chimborazo</h3>
+                    <span data-i18n="tour2_loc">Ruta del Hielo - Arenales</span>
+                </div>
+                <div class="tour-rating">
+                    <div class="rating-text">
+                        <span class="rating-word" data-i18n="rating_excellent">Excelente</span>
+                        <span class="rating-reviews">156 comentarios</span>
+                    </div>
+                    <div class="rating-score">9,5</div>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-highlights">
+                <div class="highlight-item">
+                    <span data-i18n="t2_h1">Aventura extrema sobre ruedas de 4800m a 3200m</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="level_mid">Nivel físico medio</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="t2_h3">Vistas espectaculares de los volcanes aledaños</span>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-footer">
+                <div class="tour-includes">
+                    <div class="include-item"><span class="include-icon">🚌</span><span data-i18n="inc_transport">Transporte</span></div>
+                    <div class="include-item"><span class="include-icon">🚵‍♂️</span><span data-i18n="inc_bikes">Bicicletas de montaña</span></div>
+                    <div class="include-item"><span class="include-icon">🛡️</span><span data-i18n="inc_safety">Equipo de seguridad</span></div>
+                    <div class="include-item"><span class="include-icon">🥪</span><span data-i18n="inc_boxlunch">Box Lunch</span></div>
+                </div>
+                <div class="tour-price-action">
+                    <div class="tour-price-info">
+                        <span class="price-label" data-i18n="price_label">Precio por persona</span>
+                        <span class="price-amount">US$75</span>
+                    </div>
+                    <!-- AQUÍ SE ENLAZA CON EL MODAL 2 -->
+                    <a href="#" class="btn-consultar" data-modal="modal-tour2" data-i18n="btn_consult">Consultar el tour</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- TOUR 3: Cumbre Carihuairazo -->
+    <article class="tour-card">
+        <div class="tour-image-container">
+            <img src="Imagenes/Cumbre carihuairazo.jpeg" alt="Cumbre Carihuairazo" class="tour-image">
+            <button class="btn-favorite">♡</button>
+            <div class="tour-badge">
+            </div>
+        </div>
+        
+        <div class="tour-details">
+            <div class="tour-header">
+                <div class="tour-title-section">
+                    <h3 data-i18n="tour3_title">Cumbre Central Volcán Carihuairazo</h3>
+                    <span data-i18n="tour3_loc">Provincia de Tungurahua</span>
+                </div>
+                <div class="tour-rating">
+                    <div class="rating-text">
+                        <span class="rating-word" data-i18n="rating_verygood">Muy Bueno</span>
+                        <span class="rating-reviews">98 comentarios</span>
+                    </div>
+                    <div class="rating-score">8,9</div>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-highlights">
+                <div class="highlight-item">
+                    <span data-i18n="t3_h1">Aclimatación ideal y escalada en glaciar (5018 msnm)</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="level_midhigh">Nivel físico medio - alto</span>
+                </div>
+                <div class="highlight-item">
+                    <span data-i18n="t3_h3">Caminata sobre nieve y cruce de grietas</span>
+                </div>
+            </div>
+
+            <hr class="tour-divider">
+
+            <div class="tour-footer">
+                <div class="tour-includes">
+                    <div class="include-item"><span class="include-icon">🚌</span><span data-i18n="inc_transport">Transporte</span></div>
+                    <div class="include-item"><span class="include-icon">🧗‍♂️</span><span data-i18n="inc_guides">Guías expertos</span></div>
+                    <div class="include-item"><span class="include-icon">⛏️</span><span data-i18n="inc_equipment">Equipo técnico</span></div>
+                    <div class="include-item"><span class="include-icon">🍽️</span><span data-i18n="inc_food">Alimentación</span></div>
+                </div>
+                <div class="tour-price-action">
+                    <div class="tour-price-info">
+                        <span class="price-label" data-i18n="price_label">Precio por persona</span>
+                        <span class="price-amount">US$150</span>
+                    </div>
+                    <!-- AQUÍ SE ENLAZA CON EL MODAL 3 -->
+                    <a href="#" class="btn-consultar" data-modal="modal-tour3" data-i18n="btn_consult">Consultar el tour</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- =========================================
+         VENTANAS POP-UP (ITINERARIOS)
+         ========================================= -->
+    
+    <!-- MODAL 1: CUMBRE CHIMBORAZO -->
+    <div id="modal-tour1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;">ITINERARIO: CUMBRE CHIMBORAZO</h3>
+            <div class="itinerario-cuerpo">
+                <p><strong>Día 1:</strong></p>
+                <ul>
+                    <li><strong>15:00</strong> Encuentro en El Arenal y traslado al lodge Chimborazo Rey (4.250 m).</li>
+                    <li><strong>17:00</strong> Prueba de equipo y charla técnica de seguridad.</li>
+                    <li><strong>18:30</strong> Cena caliente y descanso obligatorio.</li>
+                    <li><strong>23:00</strong> Inicio de caminata nocturna con linternas frontales.</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Día 2:</strong></p>
+                <ul>
+                    <li><strong>06:30</strong> Cumbre Veintimilla (6.230 m) al amanecer.</li>
+                    <li><strong>07:10</strong> Cumbre máxima Whymper (6.268 m).</li>
+                    <li><strong>14:00</strong> Entrega de certificado y traslado de retorno.</li>
+                </ul>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20la%20Cumbre%20al%20Chimborazo" target="_blank" class="btn-consultar">Reservar ahora por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: DESCENSO EN BICICLETA -->
+    <div id="modal-tour2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;">ITINERARIO: DESCENSO EN BICI</h3>
+            <div class="itinerario-cuerpo">
+                <p><strong>Día único:</strong></p>
+                <ul>
+                    <li><strong>08:00</strong> Encuentro en el Lodge y entrega de equipo de seguridad.</li>
+                    <li><strong>08:30</strong> Ascenso en vehículo 4x4 hasta el primer refugio (4.800 m).</li>
+                    <li><strong>09:30</strong> Charla técnica y prueba de bicicletas.</li>
+                    <li><strong>10:00</strong> Inicio del descenso extremo por los arenales.</li>
+                    <li><strong>12:30</strong> Paradas fotográficas y Box Lunch en ruta.</li>
+                    <li><strong>14:00</strong> Llegada al punto final (3.200 m) y retorno al Lodge.</li>
+                </ul>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20el%20descenso%20en%20bicicleta" target="_blank" class="btn-consultar">Reservar ahora por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: CUMBRE CARIHUAIRAZO -->
+    <div id="modal-tour3" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;">ITINERARIO: CUMBRE CARIHUAIRAZO</h3>
+            <div class="itinerario-cuerpo">
+                <p><strong>Día único:</strong></p>
+                <ul>
+                    <li><strong>04:00</strong> Desayuno en el Lodge y salida en 4x4 hacia la base.</li>
+                    <li><strong>05:30</strong> Inicio de la aproximación por el páramo andino.</li>
+                    <li><strong>08:00</strong> Llegada al borde del glaciar, equipamiento.</li>
+                    <li><strong>10:30</strong> Cumbre Central (5.018 m) y tiempo para fotografías.</li>
+                    <li><strong>11:30</strong> Descenso cuidadoso hacia la base.</li>
+                    <li><strong>14:30</strong> Retorno al vehículo y traslado al Lodge para almorzar.</li>
+                </ul>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20la%20Cumbre%20Carihuairazo" target="_blank" class="btn-consultar">Reservar ahora por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+</main>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Contacto y Ubicación</h3>
+            <p><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
+            <p><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
+        </div>
+    </footer>
+
+    <!-- ESTA ES LA LÍNEA MÁGICA QUE FALTABA -->
+    <script src="min.js"></script>
+    
+</body>
+</html>

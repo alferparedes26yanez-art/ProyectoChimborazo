@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimborazo Rey | Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+       <header>
+    <!-- Botón Hamburguesa (solo para móviles) -->
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+
+    <!-- BLOQUE 1: Menú a la izquierda -->
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
+            <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
+            <li><a href="travel.html" data-i18n="travel">Travel</a></li>
+            <li><a href="restaurantes.html" data-i18n="restaurantes">restaurantes</a></li>
+        </ul>
+    </nav>
+
+    <!-- BLOQUE 2: Logo al centro -->
+    <div class="logo-container">
+        <img src="Imagenes/logo2.png" alt="Logo Chimborazo Rey" class="logo-header">
+    </div>
+
+    <!-- BLOQUE 3: Selector de idiomas a la derecha -->
+    <div class="selector-idioma">
+        <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
+        <span class="separador">/</span>
+        <img src="https://flagcdn.com/w40/es.png" alt="Español" id="btn-es" class="bandera activo">
+    </div>
+</header>
+
+    <main>
+    <!-- SECCIÓN HERO PRINCIPAL -->
+    <div class="hero__contenido">
+        <p class="hero__kicker">
+            <span class="punto"></span>
+            CHIMBORAZO <span class="rey">REY</span> · TRAVEL EXPLORE <span class="solo-amplio">— GUARANDA, PROVINCIA BOLÍVAR, ECUADOR</span>
+        </p>
+
+        <h1 class="hero__titulo">
+            <span class="hero__linea1">EXPEDICIÓN</span>
+            <span class="hero__linea2">CUMBRE CHIMBORAZO</span>
+            <span class="hero__linea3">6.268 M</span>
+        </h1>
+
+        <p class="hero__eslogan">Toca el punto más cercano al sol.</p>
+
+        <p class="hero__bajada">
+            Doce horas entre la roca, el arenal y el glaciar para pisar el lugar de la Tierra
+            que más se aleja de su centro. No es la montaña más alta del mundo: es la
+            cumbre que está <strong>más cerca del sol que ninguna otra</strong>. Y sale desde nuestra puerta.
+        </p>
+    </div>
+    
+    <!--
+    <section class="reserva-container">
+        <form action="#" class="reserva-form">
+            
+            <div class="form-group">
+                <label for="destino" data-i18n="label_destino">Destino:</label>
+                <div class="input-container">
+                    <select id="destino" name="destino" required>
+                        <option value="" disabled selected data-i18n="opt_destino_sel">Selecciona un destino</option>
+                        <option value="lodge" data-i18n="lodge_hotel">Lodge Hotel</option>
+                        <option value="travel" data-i18n="travel_explore">Travel Explore</option>
+                        <option value="restaurante" data-i18n="rest_aventura">Restaurante de Aventura</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label data-i18n="label_fechas">Fechas</label>
+                <div class="fechas-container">
+                    <div class="input-container">
+                        <input type="text" placeholder="Entrada" onfocus="(this.type='date')" onblur="(this.type='text')" required data-i18n="ph_entrada">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="Salida" onfocus="(this.type='date')" onblur="(this.type='text')" required data-i18n="ph_salida">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="personas" data-i18n="label_personas">Cuantas Personas Viajan?</label>
+                <div class="input-container">
+                    <select id="personas" name="personas">
+                        <option value="1" data-i18n="opt_adultos_1">Adultos: 1</option>
+                        <option value="2" data-i18n="opt_adultos_2">Adultos: 2</option>
+                        <option value="3" data-i18n="opt_adultos_3">Adultos: 3</option>
+                        <option value="4" data-i18n="opt_adultos_4">Adultos: 4</option>
+                        <option value="5+" data-i18n="opt_grupo">Grupo grande</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group btn-group">
+                <button type="submit" class="btn-buscar" data-i18n="btn_buscar">BUSCAR</button>
+            </div>
+
+        </form>
+    </section>-->
+    
+
+    <!-- Tarjetas de Servicios -->
+    <section class="card-container">
+        <a href="lodge.html" class="card">
+            <img src="Imagenes/Lodge.png" alt="Lodge Chimborazo Rey" class="card-img">
+            <div class="card-content">
+                <h3 data-i18n="lodge_hotel">Lodge Hotel</h3>
+            </div>
+        </a>
+        <a href="travel.html" class="card">
+            <img src="Imagenes/Travel.jpeg" alt="Chimborazo Rey" class="card-img">
+            <div class="card-content">
+                <h3 data-i18n="travel_explore">Travel Explore</h3>
+            </div>
+        </a>
+        <a href="restaurantes.html" class="card">
+            <img src="Imagenes/Restaurante.jpeg" alt="Chimborazo Rey" class="card-img">
+            <div class="card-content">
+                <h3 data-i18n="rest_aventura">Restaurante de Aventura</h3>
+            </div>
+        </a>
+    </section>
+</main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Contacto y Ubicación</h3>
+            <p><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
+            <p><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
+        </div>
+    </footer>
+    <script src="min.js"></script>
+</body>
+</html>
