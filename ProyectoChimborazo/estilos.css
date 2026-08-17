@@ -4,14 +4,14 @@
 :root {
     /* Tus colores originales */
     --primary-color: #2C3539;
-    --secondary-color: #A0522D;
+    --secondary-color: #ce762ed3;
     --background-color: #f4f7f6;
     --text-color: #333;
 
     /* Colores Premium (Dorados y Tintas) que faltaban */
-    --oro: #9c6b0a;
-    --oro-2: #d99f1e;
-    --oro-3: #f3c66a;
+    --oro: #ce762ed3;
+    --oro-2: #ce762ed3;
+    --oro-3: #ce762ed3;
     --oro-suave: #fdf5e4;
     --tinta: #0d1a26;
     --tinta-2: #47596a;
@@ -172,15 +172,12 @@ main {
    TÍTULOS E INTRODUCCIÓN (HERO)
    ========================================= */
 .hero__contenido {
-    max-width: 550px; /* Mantiene el texto súper compacto */
-    
-    /* ESTO LO EMPUJA TOTALMENTE A LA IZQUIERDA */
+    max-width: 900px; /* Aumentamos el ancho para que llegue hasta donde marcaste */
     margin-left: 0; 
     margin-right: auto; 
     margin-bottom: 6rem;
-    
     text-align: left;
-    padding: 0 1rem; /* Alineación perfecta con el menú de arriba */
+    padding: 0 1rem; 
 }
 
 .hero__kicker {
@@ -264,6 +261,7 @@ main {
 }
 
 .hero__bajada {
+    max-width: 100%; /* Le decimos al texto que ocupe todo el espacio disponible hacia la derecha */
     color: rgba(255,255,255,.9);
     font-size: clamp(0.95rem, 1.5vw, 1.08rem);
     text-shadow: 0 2px 14px rgba(0,0,0,.45);
@@ -277,48 +275,165 @@ main {
 }
 
 /* =========================================
-   TARJETAS PRINCIPALES
+   SECCIÓN EXPERIENCIAS Y TARJETAS INDEX
    ========================================= */
+.experiencias-section {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* --- Encabezado de Experiencias --- */
+.experiencias-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.icono-montana {
+    margin-bottom: 10px;
+}
+
+.experiencias-header h2 {
+    font-family: var(--display);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: var(--blanco);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.separador-con-lineas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.separador-con-lineas .linea {
+    height: 1px;
+    width: 60px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.separador-con-lineas .rombo, .rombo-pequeno {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--oro-2);
+    transform: rotate(45deg);
+}
+
+.rombo-pequeno {
+    width: 6px;
+    height: 6px;
+    margin: 0 auto 1.2rem auto;
+}
+
+.experiencias-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1rem;
+    font-family: var(--texto);
+}
+
+/* --- Diseño de Tarjetas --- */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
 }
 
 .card {
-    background: white;
-    border-radius: 10px;
+    background: #f4f5f0; /* Color crema/hueso elegante */
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
-    color: inherit;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(255,255,255,0.1);
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
 }
 
 .card-img {
     width: 100%;
-    height: 200px;
-    background-color: #ccc; 
+    height: 100%;
     object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.05); /* Zoom sutil a la foto al pasar el ratón */
+}
+
+/* Etiqueta superior izquierda */
+.card-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: rgba(90, 50, 25, 0.85); /* Bronce oscuro semitransparente */
+    backdrop-filter: blur(4px);
+    color: white;
+    font-family: var(--texto);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.2);
+    z-index: 2;
 }
 
 .card-content {
-    padding: 1.5rem;
+    padding: 2.5rem 1.5rem 2rem 1.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .card-content h3 {
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-    font-family: var(--serif);
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 2.2rem;
+    color: #0b1a2a; /* Azul tinta casi negro */
+    margin-bottom: 0.8rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #3a4b5c; /* Gris azulado para leer fácil */
+    margin-bottom: 2rem;
+    flex-grow: 1;
+    font-family: var(--texto);
+}
+
+.card-link {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1rem;
+    color: #8B4513; /* Tono café bronce */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-link {
+    color: var(--oro-2);
 }
 
 /* =========================================
