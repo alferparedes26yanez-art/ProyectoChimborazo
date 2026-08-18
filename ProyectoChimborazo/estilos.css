@@ -343,7 +343,7 @@ main {
 }
 
 .card {
-    background: #f4f5f0; /* Color crema/hueso elegante */
+    background: #f4f5f0c4; /* Color crema/hueso elegante */
     border-radius: 12px;
     overflow: hidden;
     text-decoration: none;
@@ -440,7 +440,7 @@ main {
    PÁGINAS INTERIORES
    ========================================= */
 .page-content {
-    background: white;
+    background: rgba(255, 255, 255, 0.301);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -462,7 +462,7 @@ main {
     margin-top: 2rem;
     padding: 0.5rem 1rem;
     background-color: var(--secondary-color);
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s;
@@ -553,7 +553,7 @@ footer {
    ========================================= */
 .tour-card {
     display: flex;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.767);
     border-radius: 12px;
     margin-bottom: 2.5rem;
     overflow: hidden;
@@ -890,4 +890,55 @@ footer {
     position: absolute;
     left: 0;
     top: -2px;
+}
+/* =========================================
+   CABECERA PARA PÁGINAS INTERIORES
+   ========================================= */
+.header-interior {
+    align-items: flex-start; /* Alinea los bloques hacia arriba */
+}
+
+.header-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el título y el menú a la izquierda */
+    gap: 15px; /* Espacio entre el título y el menú */
+}
+
+.header-interior h1 {
+    font-family: var(--display);
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--blanco);
+}
+
+/* Posición de las banderas en las páginas interiores */
+.selector-interior {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    bottom: auto; /* Resetea la posición del index */
+}
+
+/* Ajustes para el menú en computadoras (páginas interiores) */
+.header-interior .nav-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustes para el móvil (páginas interiores) */
+@media (max-width: 768px) {
+    .header-interior .menu-toggle {
+        position: static; /* Quita el botón de la esquina superior derecha */
+        display: inline-block;
+        margin-top: 5px;
+        font-size: 1.5rem;
+    }
+    
+    .header-interior .selector-interior {
+        top: 25px;
+        right: 20px;
+    }
 }

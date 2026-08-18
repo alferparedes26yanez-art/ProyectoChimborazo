@@ -3,192 +3,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Explore - Chimborazo Rey</title>
+    <title>Restaurante - Chimborazo Rey</title>
+    
+    <!-- FUENTES PREMIUM -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Chimborazo Restaurante a las alturas</h1>
-        <nav class="nav-menu" id="nav-menu">
-        <ul>
-            <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
-            <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
-            <li><a href="travel.html" data-i18n="travel">Travel</a></li>
-            <li><a href="restaurantes.html" data-i18n="restaurantes">restaurantes</a></li>
-        </ul>
-    </nav>
+    <!-- CABECERA INTERIOR (Alineada a la izquierda) -->
+    <header class="header-interior">
+        <div class="header-columna">
+            <h1>Chimborazo Restaurante</h1>
+            
+            <button class="menu-toggle" id="menu-toggle">☰ Menú</button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
+                    <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
+                    <li><a href="travel.html" data-i18n="travel">Travel</a></li>
+                    <li><a href="restaurantes.html" data-i18n="restaurantes">Restaurantes</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="selector-idioma selector-interior">
+            <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
+            <span class="separador">/</span>
+            <img src="https://flagcdn.com/w40/es.png" alt="Español" id="btn-es" class="bandera activo">
+        </div>
     </header>
 
    <main>
-    <h2 class="intro" style="color: white; margin-bottom: 3rem;" data-i18n="travel_title">Una Comida Sobre las Alturas</h2>
+    <!-- TÍTULO DE LA PÁGINA (Centrado y con la fuente correcta) -->
+    <h2 style="color: white; margin-bottom: 3rem; text-align: center; font-family: var(--display); font-size: clamp(2rem, 4vw, 3rem); text-transform: uppercase; text-shadow: 0 4px 15px rgba(0,0,0,0.6);" data-i18n="rest_page_title">
+        Una Comida Sobre las Alturas
+    </h2>
 
-    <!-- 1: desayunos-->
+    <!-- TARJETA 1: DESAYUNOS Y ALMUERZOS -->
     <article class="tour-card">
         <div class="tour-image-container">
-            <!--poner imagen cafe-->
-            <img src="Imagenes/Desayunos.jpeg" alt="desayunos" class="tour-image">
-            <button class="btn-favorite">♡</button>
-            <div class="tour-badge">
-            </div>
+            <img src="Imagenes/Desayunos.jpeg" alt="Desayunos" class="tour-image">
         </div>
         
         <div class="tour-details">
             <div class="tour-header">
                 <div class="tour-title-section">
-                    <h3 data-i18n="tour1_title">Desayunos y Almuerzos</h3>
-                    <span data-i18n="tour1_loc">Opciones ideales para cualquier momento del dia</span></p>
+                    <h3>Desayunos y Almuerzos</h3>
+                    <span style="font-family: var(--serif); color: var(--tinta-3); font-style: italic;">Opciones ideales para empezar el día</span>
                 </div>
             </div>
+
             <hr class="tour-divider">
-            <div class="tour-highlights">
-                <h3 data-i18n="tour1_title">Desayunos</h3>
-                <ul>
-                    <li><a>Continental  .......... $1.50</a></li>
-                    <li><a>Tradicional  .......... $4.00</a></li>
-                    <li><a>Chimborazo Rey  .......... $5.00</a></li>
-                    <li><a>Desayuno saludable  .......... $4.00</a></li>
-                </ul>
-                <h3 data-i18n="tour1_title">Almuerzos</h3>
-                <ul>
-                    <li><a>Almuerzos 3 tiempos  .......... $4.00</a></li>
-                    <li><a>Segundo plato  .......... $4.00</a></li>
-                </ul>
-                <div class="tour-price-info">
-                        <span class="price-label" data-i18n="price_label">Precio en USD</span>
+
+            <div class="tour-highlights" style="grid-template-columns: 1fr 1fr;">
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 10px; font-family: var(--display); text-transform: uppercase;">Desayunos</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>• Continental <span style="float: right; font-weight: bold;">$1.50</span></li>
+                        <li>• Tradicional <span style="float: right; font-weight: bold;">$4.00</span></li>
+                        <li>• Chimborazo Rey <span style="float: right; font-weight: bold;">$5.00</span></li>
+                        <li>• Desayuno saludable <span style="float: right; font-weight: bold;">$4.00</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 10px; font-family: var(--display); text-transform: uppercase;">Almuerzos</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>• Almuerzo 3 tiempos <span style="float: right; font-weight: bold;">$4.00</span></li>
+                        <li>• Segundo plato <span style="float: right; font-weight: bold;">$4.00</span></li>
+                    </ul>
+                </div>
             </div>
+
             <hr class="tour-divider">
+
+            <div class="tour-footer" style="justify-content: flex-end;">
+                <div class="tour-price-action">
+                    <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20una%20mesa%20en%20el%20restaurante" target="_blank" class="btn-consultar">Reservar Mesa</a>
+                </div>
+            </div>
         </div>
     </article>
 
-<!-- TOUR 2: Cumbre Chimborazo -->
+    <!-- TARJETA 2: CAFETERÍA Y BEBIDAS -->
     <article class="tour-card">
         <div class="tour-image-container">
-            <!--poner imagen cafe-->
-            <img src="Imagenes/Bebidas.jpeg" alt="desayunos" class="tour-image">
-            <button class="btn-favorite">♡</button>
-            <div class="tour-badge">
-            </div>
+            <img src="Imagenes/Bebidas.jpeg" alt="Cafetería" class="tour-image">
         </div>
         
         <div class="tour-details">
             <div class="tour-header">
                 <div class="tour-title-section">
-                    <h3 data-i18n="tour1_title">Cafeteria y Bebidas</h3>
-                    <span data-i18n="tour1_loc">Seccion de bebidas y extras</span></p>
+                    <h3>Cafetería y Bebidas</h3>
+                    <span style="font-family: var(--serif); color: var(--tinta-3); font-style: italic;">Sección de bebidas calientes y frías</span>
                 </div>
             </div>
+
             <hr class="tour-divider">
-            <div class="tour-highlights">
-                <ul>
-                    <li><a>Inicio</a></li>
-                    <li><a>Lodge</a></li>
-                    <li><a>Travel</a></li>
-                    <li><a>restaurantes</a></li>
+
+            <div class="tour-highlights" style="grid-template-columns: 1fr;">
+                <ul style="list-style: none; padding: 0;">
+                    <li>• Café pasado de altura, tés e infusiones andinas.</li>
+                    <li>• Jugos naturales de frutas de temporada.</li>
+                    <li>• Opciones perfectas para aclimatar el cuerpo al frío.</li>
                 </ul>
             </div>
 
             <hr class="tour-divider">
+
+            <div class="tour-footer" style="justify-content: flex-end;">
+                <div class="tour-price-action">
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Menú</a>
+                </div>
+            </div>
         </div>
     </article>
-    <!-- TOUR 3: Cumbre Chimborazo -->
+
+    <!-- TARJETA 3: PLATOS FUERTES -->
     <article class="tour-card">
         <div class="tour-image-container">
-            <!--poner imagen cafe-->
-            <img src="Imagenes/platicos tipicos.jpg" alt="desayunos" class="tour-image">
-            <button class="btn-favorite">♡</button>
-            <div class="tour-badge">
-            </div>
+            <img src="Imagenes/platicos tipicos.jpg" alt="Platos Fuertes" class="tour-image">
         </div>
         
         <div class="tour-details">
             <div class="tour-header">
                 <div class="tour-title-section">
-                    <h3 data-i18n="tour1_title">Platos Fuertes</h3>
-                    <span data-i18n="tour1_loc">Opciones ideales para cualquier momento del dia</span></p>
+                    <h3>Platos Fuertes</h3>
+                    <span style="font-family: var(--serif); color: var(--tinta-3); font-style: italic;">Gastronomía con identidad andina</span>
                 </div>
             </div>
+
             <hr class="tour-divider">
-            <div class="tour-highlights">
-                <ul>
-                    <li><a>Inicio</a></li>
-                    <li><a>Lodge</a></li>
-                    <li><a>Travel</a></li>
-                    <li><a>restaurantes</a></li>
+
+            <div class="tour-highlights" style="grid-template-columns: 1fr;">
+                <ul style="list-style: none; padding: 0;">
+                    <li>• Deliciosos platos a la carta preparados al instante.</li>
+                    <li>• Ingredientes locales frescos de la provincia de Bolívar.</li>
+                    <li>• Opciones para todos los gustos tras un largo día de excursión.</li>
                 </ul>
             </div>
 
             <hr class="tour-divider">
+
+            <div class="tour-footer" style="justify-content: flex-end;">
+                <div class="tour-price-action">
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Menú</a>
+                </div>
+            </div>
         </div>
     </article>
-    <!--  4:carnes y maricos -->
+
+    <!-- TARJETA 4: CARNES Y MARISCOS -->
     <article class="tour-card">
         <div class="tour-image-container">
-            <!--poner imagen cafe-->
-            <img src="Imagenes/carnes pescado.jpeg" alt="desayunos" class="tour-image">
-            <button class="btn-favorite">♡</button>
-            <div class="tour-badge">
-            </div>
+            <img src="Imagenes/carnes pescado.jpeg" alt="Carnes y Pescados" class="tour-image">
         </div>
         
         <div class="tour-details">
             <div class="tour-header">
                 <div class="tour-title-section">
-                    <h3 data-i18n="tour1_title">Carnes Pescados y Mariscos</h3>
-                    <span data-i18n="tour1_loc">Opciones ideales para cualquier momento del dia</span></p>
+                    <h3>Carnes, Pescados y Mariscos</h3>
+                    <span style="font-family: var(--serif); color: var(--tinta-3); font-style: italic;">Cortes de primera calidad</span>
                 </div>
             </div>
+
             <hr class="tour-divider">
-            <div class="tour-highlights">
-                <ul>
-                    <li><a>Inicio</a></li>
-                    <li><a>Lodge</a></li>
-                    <li><a>Travel</a></li>
-                    <li><a>restaurantes</a></li>
+
+            <div class="tour-highlights" style="grid-template-columns: 1fr;">
+                <ul style="list-style: none; padding: 0;">
+                    <li>• Cortes de carne seleccionada a la parrilla.</li>
+                    <li>• Pescados y mariscos frescos.</li>
                 </ul>
             </div>
 
             <hr class="tour-divider">
+
+            <div class="tour-footer" style="justify-content: flex-end;">
+                <div class="tour-price-action">
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Menú</a>
+                </div>
+            </div>
         </div>
     </article>
-    <!-- TOUR 5: Cumbre Chimborazo -->
+
+    <!-- TARJETA 5: TRADICIONALES -->
     <article class="tour-card">
         <div class="tour-image-container">
-            <!--poner imagen cafe-->
-            <img src="Imagenes/Tradicionales.jpg" alt="desayunos" class="tour-image">
-            <button class="btn-favorite">♡</button>
-            <div class="tour-badge">
-            </div>
+            <img src="Imagenes/Tradicionales.jpg" alt="Tradicionales" class="tour-image">
         </div>
         
         <div class="tour-details">
             <div class="tour-header">
                 <div class="tour-title-section">
-                    <h3 data-i18n="tour1_title">Tradicionales y Varios</h3>
-                    <span data-i18n="tour1_loc">Opciones ideales para cualquier momento del dia</span></p>
+                    <h3>Tradicionales y Varios</h3>
+                    <span style="font-family: var(--serif); color: var(--tinta-3); font-style: italic;">El sabor típico ecuatoriano</span>
                 </div>
             </div>
+
             <hr class="tour-divider">
-            <div class="tour-highlights">
-                <ul>
-                    <li><a>Inicio</a></li>
-                    <li><a>Lodge</a></li>
-                    <li><a>Travel</a></li>
-                    <li><a>restaurantes</a></li>
+
+            <div class="tour-highlights" style="grid-template-columns: 1fr;">
+                <ul style="list-style: none; padding: 0;">
+                    <li>• Comida típica de la serranía ecuatoriana.</li>
+                    <li>• Caldos, sopas y especialidades de la casa.</li>
                 </ul>
             </div>
 
             <hr class="tour-divider">
+
+            <div class="tour-footer" style="justify-content: flex-end;">
+                <div class="tour-price-action">
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Menú</a>
+                </div>
+            </div>
         </div>
     </article>
     </main>
    
-<footer>
+    <footer>
         <div class="footer-content">
-            <h3>Contacto y Ubicación</h3>
-            <p><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
-            <p><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
+            <h3 data-i18n="footer_title">Contacto y Ubicación</h3>
+            <p data-i18n="footer_email"><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
+            <p data-i18n="footer_loc"><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
         </div>
     </footer>
-</body>
 
+    <!-- CONEXIÓN CON JAVASCRIPT -->
+    <script src="min.js"></script>
+</body>
 </html>

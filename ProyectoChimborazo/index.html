@@ -4,58 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chimborazo Rey | Inicio</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-       <header>
-    <!-- Botón Hamburguesa (solo para móviles) -->
-    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <header>
+        <!-- Botón Hamburguesa -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
 
-    <!-- BLOQUE 1: Menú a la izquierda -->
-    <nav class="nav-menu" id="nav-menu">
-        <ul>
-            <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
-            <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
-            <li><a href="travel.html" data-i18n="travel">Travel</a></li>
-            <li><a href="restaurantes.html" data-i18n="restaurantes">restaurantes</a></li>
-        </ul>
-    </nav>
+        <!-- BLOQUE 1: Menú a la izquierda -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
+                <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
+                <li><a href="travel.html" data-i18n="travel">Travel</a></li>
+                <li><a href="restaurantes.html" data-i18n="Restaurante">Restaurante</a></li>
+            </ul>
+        </nav>
 
-    <!-- BLOQUE 2: Logo al centro -->
-    <div class="logo-container">
-        <img src="Imagenes/logo2.png" alt="Logo Chimborazo Rey" class="logo-header">
-    </div>
+        <!-- BLOQUE 2: Logo al centro -->
+        <div class="logo-container">
+            <img src="Imagenes/logo2.png" alt="Logo Chimborazo Rey" class="logo-header">
+        </div>
 
-    <!-- BLOQUE 3: Selector de idiomas a la derecha -->
-    <div class="selector-idioma">
-        <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
-        <span class="separador">/</span>
-        <img src="https://flagcdn.com/w40/es.png" alt="Español" id="btn-es" class="bandera activo">
-    </div>
-</header>
+        <!-- BLOQUE 3: Selector de idiomas a la derecha -->
+        <div class="selector-idioma">
+            <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
+            <span class="separador">/</span>
+            <img src="https://flagcdn.com/w40/es.png" alt="Español" id="btn-es" class="bandera activo">
+        </div>
+    </header>
 
     <main>
-    <!-- SECCIÓN HERO PRINCIPAL -->
-    <div class="hero__contenido">
-        <p class="hero__kicker">
-            <span class="punto"></span>
-            CHIMBORAZO <span class="rey">REY</span> · TRAVEL EXPLORE <span class="solo-amplio">— GUARANDA, PROVINCIA BOLÍVAR, ECUADOR</span>
-        </p>
+        <!-- SECCIÓN HERO PRINCIPAL -->
+        <div class="hero__contenido">
+            <p class="hero__kicker">
+                <span class="punto"></span>
+                CHIMBORAZO <span class="rey">REY</span> · TRAVEL EXPLORE <span class="solo-amplio" data-i18n="hero_loc">— GUARANDA, PROVINCIA BOLÍVAR, ECUADOR</span>
+            </p>
 
-        <h1 class="hero__titulo">
-            <span class="hero__linea1">EXPEDICIÓN</span>
-            <span class="hero__linea2">CUMBRE CHIMBORAZO</span>
-            <span class="hero__linea3">6.268 M</span>
-        </h1>
+            <h1 class="hero__titulo">
+                <span class="hero__linea1" data-i18n="hero_l1">EXPEDICIÓN</span>
+                <span class="hero__linea2" data-i18n="hero_l2">CUMBRE CHIMBORAZO</span>
+                <span class="hero__linea3">6.268 M</span>
+            </h1>
 
-        <p class="hero__eslogan">Toca el punto más cercano al sol.</p>
+            <p class="hero__eslogan" data-i18n="hero_eslogan">Toca el punto más cercano al sol.</p>
 
-        <p class="hero__bajada">
-            Doce horas entre la roca, el arenal y el glaciar para pisar el lugar de la Tierra
-            que más se aleja de su centro. No es la montaña más alta del mundo: es la
-            cumbre que está <strong>más cerca del sol que ninguna otra</strong>. Y sale desde nuestra puerta.
-        </p>
-    </div>
+            <p class="hero__bajada" data-i18n="hero_bajada">
+                Doce horas entre la roca, el arenal y el glaciar para pisar el lugar de la Tierra
+                que más se aleja de su centro. No es la montaña más alta del mundo: es la
+                cumbre que está <strong>más cerca del sol que ninguna otra</strong>. Y sale desde nuestra puerta.
+            </p>
+        </div>
     
     <!--
     <section class="reserva-container">
@@ -105,62 +109,57 @@
     </section>-->
     
 
-    <!-- =========================================
-         SECCIÓN EXPERIENCIAS (TARJETAS PREMIUM)
-         ========================================= -->
-    <section class="experiencias-section">
-        
-        <!-- Encabezado de la sección -->
-        <div class="experiencias-header">
-            
-        <h2 class="hero__bajada">EXPERIENCIAS <strong>CHIMBORAZO REY</strong> </h2>  
-        </div>
+    <!-- SECCIÓN EXPERIENCIAS -->
+        <section class="experiencias-section">
+            <div class="experiencias-header">
+                <h2 class="hero__bajada" data-i18n="exp_title">EXPERIENCIAS <strong>CHIMBORAZO REY</strong></h2>  
+            </div>
 
-        <div class="card-container">
-            <!-- TARJETA 1 -->
-            <a href="lodge.html" class="card">
-                <div class="card-img-wrapper">
-                    <img src="Imagenes/Lodge.png" alt="Lodge Hotel" class="card-img">
-                </div>
-                <div class="card-content">
-                    <h3 data-i18n="lodge_hotel">LODGE HOTEL</h3>
-                    <p data-i18n="lodge_desc">Descansa frente al volcán más imponente del Ecuador.</p>
-                    <span class="card-link" data-i18n="lodge_link">EXPLORAR ALOJAMIENTO &rarr;</span>
-                </div>
-            </a>
+            <div class="card-container">
+                <!-- TARJETA 1 -->
+                <a href="lodge.html" class="card">
+                    <div class="card-img-wrapper">
+                        <img src="Imagenes/Lodge.png" alt="Lodge Hotel" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="lodge_hotel">LODGE HOTEL</h3>
+                        <p data-i18n="lodge_desc">Descansa frente al volcán más imponente del Ecuador.</p>
+                        <span class="card-link" data-i18n="lodge_link">EXPLORAR ALOJAMIENTO &rarr;</span>
+                    </div>
+                </a>
 
-            <!-- TARJETA 2 -->
-            <a href="travel.html" class="card">
-                <div class="card-img-wrapper">
-                    <img src="Imagenes/Travel.jpeg" alt="Travel Explore" class="card-img">
-                </div>
-                <div class="card-content">
-                    <h3 data-i18n="travel_explore">TRAVEL EXPLORE</h3>
-                    <p data-i18n="travel_desc">Vive rutas, nieve y experiencias inolvidables.</p>
-                    <span class="card-link" data-i18n="travel_link">DESCUBRIR AVENTURAS &rarr;</span>
-                </div>
-            </a>
+                <!-- TARJETA 2 -->
+                <a href="travel.html" class="card">
+                    <div class="card-img-wrapper">
+                        <img src="Imagenes/Travel.jpeg" alt="Travel Explore" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="travel_explore">TRAVEL EXPLORE</h3>
+                        <p data-i18n="travel_desc">Vive rutas, nieve y experiencias inolvidables.</p>
+                        <span class="card-link" data-i18n="travel_link">DESCUBRIR AVENTURAS &rarr;</span>
+                    </div>
+                </a>
 
-            <!-- TARJETA 3 -->
-            <a href="restaurantes.html" class="card">
-                <div class="card-img-wrapper">
-                    <img src="Imagenes/Restaurante.jpeg" alt="Restaurante de Aventura" class="card-img">
-                </div>
-                <div class="card-content">
-                    <h3 data-i18n="rest_aventura">RESTAURANTE DE AVENTURA</h3>
-                    <p data-i18n="rest_desc">Sabores andinos en un ambiente auténtico.</p>
-                    <span class="card-link" data-i18n="rest_link">VER RESTAURANTE &rarr;</span>
-                </div>
-            </a>
-        </div>
-    </section>
-</main>
+                <!-- TARJETA 3 -->
+                <a href="restaurantes.html" class="card">
+                    <div class="card-img-wrapper">
+                        <img src="Imagenes/Restaurante.jpeg" alt="Restaurante de Aventura" class="card-img">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="rest_aventura">RESTAURANTE DE AVENTURA</h3>
+                        <p data-i18n="rest_desc">Sabores andinos en un ambiente auténtico.</p>
+                        <span class="card-link" data-i18n="rest_link">VER RESTAURANTE &rarr;</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-content">
-            <h3>Contacto y Ubicación</h3>
-            <p><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
-            <p><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
+            <h3 data-i18n="footer_title">Contacto y Ubicación</h3>
+            <p><strong data-i18n="footer_email">Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
+            <p><strong data-i18n="footer_loc_title">Ubicación:</strong> <span data-i18n="footer_address">Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</span></p>
         </div>
     </footer>
     <script src="min.js"></script>

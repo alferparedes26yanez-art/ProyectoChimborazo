@@ -13,16 +13,30 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Chimborazo Travel Explore</h1>
-        <nav class="nav-menu" id="nav-menu">
-        <ul>
-            <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
-            <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
-            <li><a href="travel.html" data-i18n="travel">Travel</a></li>
-            <li><a href="restaurantes.html" data-i18n="restaurantes">restaurantes</a></li>
-        </ul>
-    </nav>
+    <header class="header-interior">
+        <!-- Bloque Izquierdo: Título y Menú debajo -->
+        <div class="header-columna">
+            <h1>Chimborazo Travel Explore</h1>
+            
+            <!-- Botón Hamburguesa (solo visible en móviles) -->
+            <button class="menu-toggle" id="menu-toggle">☰ Menú</button>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html" data-i18n="inicio">Inicio</a></li>
+                    <li><a href="lodge.html" data-i18n="lodge">Lodge</a></li>
+                    <li><a href="travel.html" data-i18n="travel">Travel</a></li>
+                    <li><a href="restaurantes.html" data-i18n="restaurantes">Restaurantes</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Bloque Derecho: Selector de idiomas -->
+        <div class="selector-idioma selector-interior">
+            <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
+            <span class="separador">/</span>
+            <img src="https://flagcdn.com/w40/es.png" alt="Español" id="btn-es" class="bandera activo">
+        </div>
     </header>
 
    <main>
@@ -33,8 +47,7 @@
         <div class="tour-image-container">
             <img src="Imagenes/Cumbre Volcan.jpeg" alt="Cumbre Chimborazo" class="tour-image">
             <button class="btn-favorite">♡</button>
-            <div class="tour-badge">
-            </div>
+            <div class="tour-badge"></div>
         </div>
         
         <div class="tour-details">
@@ -46,7 +59,7 @@
                 <div class="tour-rating">
                     <div class="rating-text">
                         <span class="rating-word" data-i18n="rating_fantastic">Fantástico</span>
-                        <span class="rating-reviews">238 comentarios</span>
+                        <span class="rating-reviews" data-i18n="t1_reviews">238 comentarios</span>
                     </div>
                     <div class="rating-score">9,5</div>
                 </div>
@@ -64,7 +77,7 @@
                 <div class="highlight-item">
                 </div>
                 <div class="highlight-item">
-                    <span data-i18n="t1_h3"> - Páramo andino con flora y fauna endémica</span>
+                    <span data-i18n="t1_h3">- Páramo andino con flora y fauna endémica</span>
                 </div>
             </div>
 
@@ -82,7 +95,6 @@
                         <span class="price-label" data-i18n="price_label">Precio por persona</span>
                         <span class="price-amount">US$300</span>
                     </div>
-                    <!-- AQUÍ SE ENLAZA CON EL MODAL 1 -->
                     <a href="#" class="btn-consultar" data-modal="modal-tour1" data-i18n="btn_consult">Consultar el tour</a>
                 </div>
             </div>
@@ -94,8 +106,7 @@
         <div class="tour-image-container">
             <img src="Imagenes/Decenso en Bicicleta.jpeg" alt="Descenso en Bicicleta" class="tour-image">
             <button class="btn-favorite">♡</button>
-            <div class="tour-badge">
-            </div>
+            <div class="tour-badge"></div>
         </div>
         
         <div class="tour-details">
@@ -107,7 +118,7 @@
                 <div class="tour-rating">
                     <div class="rating-text">
                         <span class="rating-word" data-i18n="rating_excellent">Excelente</span>
-                        <span class="rating-reviews">156 comentarios</span>
+                        <span class="rating-reviews" data-i18n="t2_reviews">156 comentarios</span>
                     </div>
                     <div class="rating-score">9,5</div>
                 </div>
@@ -141,7 +152,6 @@
                         <span class="price-label" data-i18n="price_label">Precio por persona</span>
                         <span class="price-amount">US$75</span>
                     </div>
-                    <!-- AQUÍ SE ENLAZA CON EL MODAL 2 -->
                     <a href="#" class="btn-consultar" data-modal="modal-tour2" data-i18n="btn_consult">Consultar el tour</a>
                 </div>
             </div>
@@ -153,8 +163,7 @@
         <div class="tour-image-container">
             <img src="Imagenes/Cumbre carihuairazo.jpeg" alt="Cumbre Carihuairazo" class="tour-image">
             <button class="btn-favorite">♡</button>
-            <div class="tour-badge">
-            </div>
+            <div class="tour-badge"></div>
         </div>
         
         <div class="tour-details">
@@ -166,7 +175,7 @@
                 <div class="tour-rating">
                     <div class="rating-text">
                         <span class="rating-word" data-i18n="rating_verygood">Muy Bueno</span>
-                        <span class="rating-reviews">98 comentarios</span>
+                        <span class="rating-reviews" data-i18n="t3_reviews">98 comentarios</span>
                     </div>
                     <div class="rating-score">8,9</div>
                 </div>
@@ -200,7 +209,6 @@
                         <span class="price-label" data-i18n="price_label">Precio por persona</span>
                         <span class="price-amount">US$150</span>
                     </div>
-                    <!-- AQUÍ SE ENLAZA CON EL MODAL 3 -->
                     <a href="#" class="btn-consultar" data-modal="modal-tour3" data-i18n="btn_consult">Consultar el tour</a>
                 </div>
             </div>
@@ -215,8 +223,9 @@
     <div id="modal-tour1" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;">ITINERARIO: CUMBRE CHIMBORAZO</h3>
-            <div class="itinerario-cuerpo">
+            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;" data-i18n="m1_title">ITINERARIO: CUMBRE CHIMBORAZO</h3>
+            
+            <div class="itinerario-cuerpo" data-i18n="m1_body">
                 <p><strong>Día 1:</strong></p>
                 <ul>
                     <li><strong>15:00</strong> Encuentro en El Arenal y traslado al lodge Chimborazo Rey (4.250 m).</li>
@@ -231,8 +240,9 @@
                     <li><strong>14:00</strong> Entrega de certificado y traslado de retorno.</li>
                 </ul>
             </div>
+            
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20la%20Cumbre%20al%20Chimborazo" target="_blank" class="btn-consultar">Reservar ahora por WhatsApp</a>
+                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20la%20Cumbre%20al%20Chimborazo" target="_blank" class="btn-consultar" data-i18n="btn_whatsapp">Reservar ahora por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -241,8 +251,9 @@
     <div id="modal-tour2" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;">ITINERARIO: DESCENSO EN BICI</h3>
-            <div class="itinerario-cuerpo">
+            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;" data-i18n="m2_title">ITINERARIO: DESCENSO EN BICI</h3>
+            
+            <div class="itinerario-cuerpo" data-i18n="m2_body">
                 <p><strong>Día único:</strong></p>
                 <ul>
                     <li><strong>08:00</strong> Encuentro en el Lodge y entrega de equipo de seguridad.</li>
@@ -253,8 +264,9 @@
                     <li><strong>14:00</strong> Llegada al punto final (3.200 m) y retorno al Lodge.</li>
                 </ul>
             </div>
+            
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20el%20descenso%20en%20bicicleta" target="_blank" class="btn-consultar">Reservar ahora por WhatsApp</a>
+                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20el%20descenso%20en%20bicicleta" target="_blank" class="btn-consultar" data-i18n="btn_whatsapp">Reservar ahora por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -263,8 +275,9 @@
     <div id="modal-tour3" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;">ITINERARIO: CUMBRE CARIHUAIRAZO</h3>
-            <div class="itinerario-cuerpo">
+            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;" data-i18n="m3_title">ITINERARIO: CUMBRE CARIHUAIRAZO</h3>
+            
+            <div class="itinerario-cuerpo" data-i18n="m3_body">
                 <p><strong>Día único:</strong></p>
                 <ul>
                     <li><strong>04:00</strong> Desayuno en el Lodge y salida en 4x4 hacia la base.</li>
@@ -275,8 +288,9 @@
                     <li><strong>14:30</strong> Retorno al vehículo y traslado al Lodge para almorzar.</li>
                 </ul>
             </div>
+            
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20la%20Cumbre%20Carihuairazo" target="_blank" class="btn-consultar">Reservar ahora por WhatsApp</a>
+                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20la%20Cumbre%20Carihuairazo" target="_blank" class="btn-consultar" data-i18n="btn_whatsapp">Reservar ahora por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -285,13 +299,12 @@
     
     <footer>
         <div class="footer-content">
-            <h3>Contacto y Ubicación</h3>
-            <p><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
-            <p><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
+            <h3 data-i18n="footer_title">Contacto y Ubicación</h3>
+            <p data-i18n="footer_email"><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
+            <p data-i18n="footer_loc"><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
         </div>
     </footer>
 
-    <!-- ESTA ES LA LÍNEA MÁGICA QUE FALTABA -->
     <script src="min.js"></script>
     
 </body>
