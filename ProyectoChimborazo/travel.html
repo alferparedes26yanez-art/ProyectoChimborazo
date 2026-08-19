@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Explore - Chimborazo Rey</title>
     
-    <!-- Agregamos las fuentes premium para que los modales se vean elegantes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -14,11 +13,11 @@
 </head>
 <body>
     <header class="header-interior">
-        <!-- Bloque Izquierdo: Título y Menú debajo -->
         <div class="header-columna">
-            <h1>Chimborazo Travel Explore</h1>
+            <h1 style="font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 4vw, 2.5rem); text-transform: uppercase; letter-spacing: 0.05em; color: white; margin: 0; text-shadow: 0 4px 15px rgba(0,0,0,0.6);">
+                CHIMBORAZO TRAVEL EXPLORE
+            </h1>
             
-            <!-- Botón Hamburguesa (solo visible en móviles) -->
             <button class="menu-toggle" id="menu-toggle">☰ Menú</button>
             
             <nav class="nav-menu" id="nav-menu">
@@ -31,7 +30,6 @@
             </nav>
         </div>
 
-        <!-- Bloque Derecho: Selector de idiomas -->
         <div class="selector-idioma selector-interior">
             <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
             <span class="separador">/</span>
@@ -40,7 +38,9 @@
     </header>
 
    <main>
-    <h2 class="intro" style="color: white; margin-bottom: 3rem;" data-i18n="travel_title">NUESTRAS EXPEDICIONES Y TOURS</h2>
+    <h2 style="color: white; margin-bottom: 3rem; text-align: center; font-family: var(--display); font-size: clamp(2rem, 4vw, 3rem); text-transform: uppercase; text-shadow: 0 4px 15px rgba(0,0,0,0.6);" data-i18n="rest_page_title">
+        Una Aventura extrema
+    </h2>
 
     <!-- TOUR 1: Cumbre Chimborazo -->
     <article class="tour-card">
@@ -219,25 +219,40 @@
          VENTANAS POP-UP (ITINERARIOS)
          ========================================= -->
     
-    <!-- MODAL 1: CUMBRE CHIMBORAZO -->
-    <div id="modal-tour1" class="modal">
+   <!-- MODAL 1: CUMBRE CHIMBORAZO -->
+    <div id="modal-tour1" class="modal"> <!-- AQUÍ ESTÁ LA CORRECCIÓN DEL ID -->
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;" data-i18n="m1_title">ITINERARIO: CUMBRE CHIMBORAZO</h3>
             
-            <div class="itinerario-cuerpo" data-i18n="m1_body">
-                <p><strong>Día 1:</strong></p>
+            <div class="itinerario-cuerpo" data-i18n="m1_body"> <!-- CORREGIDO A m1_body -->
+                <p><strong>¡Atrévete a conquistar el punto más cercano al sol en la cumbre del imponente Volcán Chimborazo (6.268 m s. n. m.)! 
+                Una experiencia única en la Reserva de Producción Faunística Chimborazo.</strong></p>
+                <br>
+                <p><strong>¿Qué incluye?</strong></p>
                 <ul>
-                    <li><strong>15:00</strong> Encuentro en El Arenal y traslado al lodge Chimborazo Rey (4.250 m).</li>
-                    <li><strong>17:00</strong> Prueba de equipo y charla técnica de seguridad.</li>
-                    <li><strong>18:30</strong> Cena caliente y descanso obligatorio.</li>
-                    <li><strong>23:00</strong> Inicio de caminata nocturna con linternas frontales.</li>
+                    <li>Transporte privado ida y vuelta.</li>
+                    <li>Guías especializados y certificados (Aseguim - Mintur).</li>
+                    <li>Asistencia en Primeros Auxilios.</li>
+                    <li>Equipo de montaña completo (casco, arnés, piolet, botas de alta montaña y crampones).</li>
+                    <li>HHospedaje y alimentación.</li>
                 </ul>
-                <p style="margin-top: 15px;"><strong>Día 2:</strong></p>
+                
+                <p style="margin-top: 15px;"><strong>Itinerario</strong></p>
                 <ul>
-                    <li><strong>06:30</strong> Cumbre Veintimilla (6.230 m) al amanecer.</li>
-                    <li><strong>07:10</strong> Cumbre máxima Whymper (6.268 m).</li>
-                    <li><strong>14:00</strong> Entrega de certificado y traslado de retorno.</li>
+                     <li><strong>Preparación:</strong> Cena en el restaurante de Alta Montaña Chimborazo Rey, charla instructiva de seguridad con los guías, 
+                    preparación de equipo y un café relajante..</li>
+                    <li><strong>Aproximación:</strong> Traslado en vehículo al sector de entrada y desplazamiento hacia el segundo refugio..</li>
+                    <li><strong>Ascenso Nocturno:</strong> A las 11:00 p. m. se inicia la travesía por el glaciar.</li>
+                    <li><strong>Cima:</strong> 8 horas de riguroso ascenso hasta la cumbre Veintimilla (6.250 m) y 40 minutos adicionales para alcanzar la cumbre máxima del Chimborazo..</li>
+                    <li><strong>Retorno:</strong> Descenso al restaurante de alta montaña Chimborazo Rey para disfrutar de platos típicos y un cómodo viaje de regreso a Guaranda.</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>¿Qué debes llevar?</strong></p>
+                <ul>
+                     <li><strong>Ropa adecuada (Sistema de 3 capas):</strong> Primera capa transpirable, segunda capa térmica y tercera capa impermeable.</li>
+                    <li><strong>Accesorios:</strong> Medias térmicas, gorro, guantes impermeables, buff y gafas de glaciar (Categoría 4).</li>
+                    <li><strong>Equipo personal:</strong> Mochila cómoda, linterna frontal con pilas extras, termo para bebidas calientes y protector solar 50+.</li>
                 </ul>
             </div>
             
@@ -248,25 +263,44 @@
     </div>
 
     <!-- MODAL 2: DESCENSO EN BICICLETA -->
-    <div id="modal-tour2" class="modal">
+    <div id="modal-tour2" class="modal"> <!-- AQUÍ ESTÁ LA CORRECCIÓN DEL ID -->
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;" data-i18n="m2_title">ITINERARIO: DESCENSO EN BICI</h3>
+            <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;" data-i18n="m2_title">ITINERARIO: CUMBRE CHIMBORAZO</h3>
             
-            <div class="itinerario-cuerpo" data-i18n="m2_body">
-                <p><strong>Día único:</strong></p>
+            <div class="itinerario-cuerpo" data-i18n="m2_body"> <!-- CORREGIDO A m2_body -->
+                <p><strong>¡Atrévete a conquistar la cumbre del Volcán Chimborazo a 6.268 m s. n. m.! El punto de la Tierra más cercano al sol. Una expedición exigente y fascinante en la Reserva de Producción de Fauna Chimborazo.</strong></p>
+                <br>
+                <p><strong>¿Qué incluye?</strong></p>
                 <ul>
-                    <li><strong>08:00</strong> Encuentro en el Lodge y entrega de equipo de seguridad.</li>
-                    <li><strong>08:30</strong> Ascenso en vehículo 4x4 hasta el primer refugio (4.800 m).</li>
-                    <li><strong>09:30</strong> Charla técnica y prueba de bicicletas.</li>
-                    <li><strong>10:00</strong> Inicio del descenso extremo por los arenales.</li>
-                    <li><strong>12:30</strong> Paradas fotográficas y Box Lunch en ruta.</li>
-                    <li><strong>14:00</strong> Llegada al punto final (3.200 m) y retorno al Lodge.</li>
+                    <li>Transporte privado ida y vuelta desde Guaranda.</li>
+                    <li>Guías de Alta Montaña certificados (ASEGUIM).</li>
+                    <li>Asistencia en Primeros Auxilios.</li>
+                    <li>Equipo técnico de glaciar (casco, arnés, piolet, botas de alta montaña y crampones).</li>
+                    <li>Hospedaje en Lodge Chimborazo Rey y alimentación completa.</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Itinerario</strong></p>
+                <ul>
+                     <li><strong>Día 1 - 15:00:</strong> Encuentro en El Arenal y traslado al lodge Chimborazo Rey (4.250 m).</li>
+                    <li><strong>17:00:</strong> Prueba de equipo y charla técnica de seguridad con los guías.</li>
+                    <li><strong>18:30:</strong> Cena caliente y descanso obligatorio.</li>
+                    <li><strong>23:00:</strong> Despertar, equipamiento e inicio de la caminata nocturna con linternas frontales.</li>
+                    <li><strong>Día 2 - 06:30:</strong> Cumbre Veintimilla (6.230 m) al amanecer.</li>
+                    <li><strong>07:10:</strong> Cumbre máxima Whymper (6.268 m).</li>
+                    <li><strong>14:00:</strong> Retorno, entrega de certificados y traslado de regreso.</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>¿Qué debes llevar?</strong></p>
+                <ul>
+                     <li><strong>Ropa adecuada (Sistema de 3 capas):</strong> Primera capa transpirable, segunda capa térmica y tercera capa impermeable.</li>
+                    <li><strong>Accesorios:</strong> Medias térmicas, gorro, guantes impermeables, buff y gafas de glaciar (Categoría 4).</li>
+                    <li><strong>Equipo personal:</strong> Mochila cómoda, linterna frontal con pilas extras, termo para bebidas calientes y protector solar 50+.</li>
                 </ul>
             </div>
             
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20el%20descenso%20en%20bicicleta" target="_blank" class="btn-consultar" data-i18n="btn_whatsapp">Reservar ahora por WhatsApp</a>
+                <a href="https://wa.me/593968596592?text=Hola,%20deseo%20reservar%20la%20Cumbre%20al%20Chimborazo" target="_blank" class="btn-consultar" data-i18n="btn_whatsapp">Reservar ahora por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -277,15 +311,35 @@
             <span class="close-btn">&times;</span>
             <h3 style="font-family: var(--display); color: var(--secondary-color); font-size: 1.8rem; margin-bottom: 10px;" data-i18n="m3_title">ITINERARIO: CUMBRE CARIHUAIRAZO</h3>
             
+            <!-- EL CAMBIO: Todo agrupado en un solo bloque div -->
             <div class="itinerario-cuerpo" data-i18n="m3_body">
-                <p><strong>Día único:</strong></p>
+                <p><strong>¡Atrévete a conquistar el pico central del Carihuairazo a 5.020 m s. n. m.! Una experiencia inolvidable rodeada de paisajes andinos únicos en la Reserva de Producción Faunística Chimborazo.</strong></p>
+                <br>
+                <p><strong>¿Qué incluye?</strong></p>
                 <ul>
-                    <li><strong>04:00</strong> Desayuno en el Lodge y salida en 4x4 hacia la base.</li>
-                    <li><strong>05:30</strong> Inicio de la aproximación por el páramo andino.</li>
-                    <li><strong>08:00</strong> Llegada al borde del glaciar, equipamiento.</li>
-                    <li><strong>10:30</strong> Cumbre Central (5.018 m) y tiempo para fotografías.</li>
-                    <li><strong>11:30</strong> Descenso cuidadoso hacia la base.</li>
-                    <li><strong>14:30</strong> Retorno al vehículo y traslado al Lodge para almorzar.</li>
+                    <li>Transporte privado ida y vuelta.</li>
+                    <li>Guías especializados y certificados (Aseguim - Mintur).</li>
+                    <li>Asistencia en Primeros Auxilios.</li>
+                    <li>Equipo de montaña completo (casco, arnés, piolet, botas de alta montaña y crampones).</li>
+                    <li>Hospedaje y alimentación.</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>Itinerario</strong></p>
+                <ul>
+                     <li><strong>Preparación:</strong> Cena en el restaurante de Alta Montaña Chimborazo Rey y traslado al sector de entrada.</li>
+                    <li><strong>Aproximación:</strong> Caminata inicial hasta la base del glaciar para equipamiento.</li>
+                    <li><strong>Instrucción:</strong> Charla de seguridad y técnicas de montaña a cargo de guías expertos.</li>
+                    <li><strong>Ascenso:</strong> Inicio de la travesía por el glaciar a las 6:00 a. m. hacia la base del pico máximo.</li>
+                    <li><strong>Cima:</strong> 2 horas de aventura hasta alcanzar la cumbre (5.020 m).</li>
+                    <li><strong>Retorno:</strong> Descenso al refugio, almuerzo reconfortante en el restaurante Chimborazo Rey y viaje de regreso a Guaranda.</li>
+                </ul>
+                
+                <p style="margin-top: 15px;"><strong>¿Qué debes llevar?</strong></p>
+                <ul>
+                     <li><strong>Ropa adecuada (Sistema de 3 capas):</strong> Primera capa: Licra y buzo térmico/transpirable. - Segunda capa: Chompa y pantalón térmico. - Tercera capa: Chompa y pantalón impermeable.</li>
+                    <li><strong>Accesorios:</strong> 2 pares de medias, gorro térmico, guantes (térmicos e impermeables), buff o pañuelo, y buenas gafas.</li>
+                    <li><strong>Equipo personal:</strong> Mochila cómoda, linterna frontal con pilas extras, termo de 1.5 litros (ideal para bebidas calientes), protector solar y de labios, y cámara o celular protegidos contra el frío y agua.</li>
+                    <li><strong>Extra:</strong> Una mudada completa de ropa de recambio (se queda en el transporte).</li>
                 </ul>
             </div>
             

@@ -830,9 +830,8 @@ footer {
 }
 
 .modal-content {
-    /* EL DEGRADADO SUTIL DE ATARDECER */
+    /* Fondo original */
     background: linear-gradient(135deg, #fdfbfb 0%, #faedeb 50%, #f6d8ce 100%);
-    
     padding: 2.5rem;
     border-radius: 12px;
     max-width: 650px;
@@ -840,9 +839,27 @@ footer {
     color: var(--tinta);
     position: relative;
     box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-    border: 1px solid rgba(160, 82, 45, 0.2); /* Borde sutil naranja */
+    border: 1px solid rgba(160, 82, 45, 0.2);
     transform: translateY(-20px);
     transition: transform 0.3s ease;
+    
+    /* MAGIA PARA EL SCROLL INTERNO */
+    max-height: 85vh; /* La ventana ocupará máximo el 85% del alto de la pantalla */
+    overflow-y: auto; /* Crea el scroll si el texto es muy largo */
+}
+
+/* Diseño personalizado y elegante para la barrita de scroll del Pop-up */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+.modal-content::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.05); 
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--secondary-color); 
+    border-radius: 8px;
 }
 
 .modal.mostrar .modal-content {

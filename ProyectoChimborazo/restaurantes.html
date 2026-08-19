@@ -38,9 +38,9 @@
     </header>
 
    <main>
-    <!-- TÍTULO DE LA PÁGINA (Centrado y con la fuente correcta) -->
+    <!-- TÍTULO DE LA PÁGINA -->
     <h2 style="color: white; margin-bottom: 3rem; text-align: center; font-family: var(--display); font-size: clamp(2rem, 4vw, 3rem); text-transform: uppercase; text-shadow: 0 4px 15px rgba(0,0,0,0.6);" data-i18n="rest_page_title">
-        Una Comida Sobre las Alturas
+        Una Comida Sobre las Nubes
     </h2>
 
     <!-- TARJETA 1: DESAYUNOS Y ALMUERZOS -->
@@ -59,21 +59,34 @@
 
             <hr class="tour-divider">
 
-            <div class="tour-highlights" style="grid-template-columns: 1fr 1fr;">
+            <!-- Contenedor adaptativo: 2 columnas en PC, 1 columna en celulares -->
+            <div class="tour-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
                 <div>
-                    <h4 style="color: var(--oro-2); margin-bottom: 10px; font-family: var(--display); text-transform: uppercase;">Desayunos</h4>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Desayunos</h4>
                     <ul style="list-style: none; padding: 0;">
-                        <li>• Continental <span style="float: right; font-weight: bold;">$1.50</span></li>
-                        <li>• Tradicional <span style="float: right; font-weight: bold;">$4.00</span></li>
-                        <li>• Chimborazo Rey <span style="float: right; font-weight: bold;">$5.00</span></li>
-                        <li>• Desayuno saludable <span style="float: right; font-weight: bold;">$4.00</span></li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Continental</span> <strong>$1.50</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Tradicional</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Chimborazo Rey</span> <strong>$5.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Desayuno saludable</span> <strong>$4.00</strong>
+                        </li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--oro-2); margin-bottom: 10px; font-family: var(--display); text-transform: uppercase;">Almuerzos</h4>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Almuerzos</h4>
                     <ul style="list-style: none; padding: 0;">
-                        <li>• Almuerzo 3 tiempos <span style="float: right; font-weight: bold;">$4.00</span></li>
-                        <li>• Segundo plato <span style="float: right; font-weight: bold;">$4.00</span></li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Almuerzo 3 tiempos</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Segundo plato</span> <strong>$4.00</strong>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -104,19 +117,42 @@
 
             <hr class="tour-divider">
 
-            <div class="tour-highlights" style="grid-template-columns: 1fr;">
-                <ul style="list-style: none; padding: 0;">
-                    <li>• Café pasado de altura, tés e infusiones andinas.</li>
-                    <li>• Jugos naturales de frutas de temporada.</li>
-                    <li>• Opciones perfectas para aclimatar el cuerpo al frío.</li>
-                </ul>
+            <div class="tour-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Bebidas</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Shot de Pájaro Azul</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Shot de Pájaro Azul flameado</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Té de chuquirahua</span> <strong>$1.25</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Té de coca</span> <strong>$1.50</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Postres</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Brownie con helado</span> <strong>$3.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Copa de helado</span> <strong>$1.75</strong>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <hr class="tour-divider">
 
             <div class="tour-footer" style="justify-content: flex-end;">
                 <div class="tour-price-action">
-                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Menú</a>
+                    <a href="https://wa.me/593968596592?text=Hola,%20deseo%20ver%20el%20menú%20de%20cafetería" target="_blank" class="btn-consultar">Consultar Menú</a>
                 </div>
             </div>
         </div>
@@ -138,19 +174,88 @@
 
             <hr class="tour-divider">
 
-            <div class="tour-highlights" style="grid-template-columns: 1fr;">
-                <ul style="list-style: none; padding: 0;">
-                    <li>• Deliciosos platos a la carta preparados al instante.</li>
-                    <li>• Ingredientes locales frescos de la provincia de Bolívar.</li>
-                    <li>• Opciones para todos los gustos tras un largo día de excursión.</li>
-                </ul>
+            <!-- Dos columnas adaptativas -->
+            <div class="tour-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+                
+                <!-- Columna Izquierda -->
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Cerdo</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Chuleta a la BBQ</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Chuleta a la Plancha</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Costillas BBQ</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Pollo</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a las Finas Hierbas</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Plancha</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Cordon Bleu de Pollo</span> <strong>$1.25</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo con Champiñones</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Naranja</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Piedra</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Pescado</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha en Almendras</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha a la Piedra Flameada</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha Frita</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Carnes</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo al Vino Tinto</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Plancha</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Filete Miñón</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Piedra Flameado</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Pimienta</span> <strong>$4.00</strong>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
+            
             <hr class="tour-divider">
-
+            
             <div class="tour-footer" style="justify-content: flex-end;">
                 <div class="tour-price-action">
-                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Menú</a>
+                    <a href="https://wa.me/593968596592?text=Hola,%20deseo%20consultar%20sobre%20los%20platos%20fuertes" target="_blank" class="btn-consultar">Consultar Menú</a>
                 </div>
             </div>
         </div>
@@ -172,11 +277,80 @@
 
             <hr class="tour-divider">
 
-            <div class="tour-highlights" style="grid-template-columns: 1fr;">
-                <ul style="list-style: none; padding: 0;">
-                    <li>• Cortes de carne seleccionada a la parrilla.</li>
-                    <li>• Pescados y mariscos frescos.</li>
-                </ul>
+            <div class="tour-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+                <div class="tour-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+                
+                <!-- Columna Izquierda -->
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Cerdo</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Chuleta a la BBQ</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Chuleta a la Plancha</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Costillas BBQ</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Pollo</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a las Finas Hierbas</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Plancha</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Cordon Bleu de Pollo</span> <strong>$1.25</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo con Champiñones</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Naranja</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Piedra</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Pescado</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha en Almendras</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha a la Piedra Flameada</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha Frita</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Carnes</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo al Vino Tinto</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Plancha</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Filete Miñón</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Piedra Flameado</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Pimienta</span> <strong>$4.00</strong>
+                        </li>
+                    </ul>
             </div>
 
             <hr class="tour-divider">
@@ -205,11 +379,80 @@
 
             <hr class="tour-divider">
 
-            <div class="tour-highlights" style="grid-template-columns: 1fr;">
-                <ul style="list-style: none; padding: 0;">
-                    <li>• Comida típica de la serranía ecuatoriana.</li>
-                    <li>• Caldos, sopas y especialidades de la casa.</li>
-                </ul>
+            <div class="tour-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+                <div class="tour-highlights" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+                
+                <!-- Columna Izquierda -->
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Cerdo</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Chuleta a la BBQ</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Chuleta a la Plancha</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Costillas BBQ</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Pollo</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a las Finas Hierbas</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Plancha</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Cordon Bleu de Pollo</span> <strong>$1.25</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo con Champiñones</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Naranja</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Pollo a la Piedra</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div>
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Pescado</h4>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 24px;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha en Almendras</span> <strong>$1.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha a la Piedra Flameada</span> <strong>$2.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Trucha Frita</span> <strong>$1.25</strong>
+                        </li>
+                    </ul>
+
+                    <h4 style="color: var(--oro-2); margin-bottom: 12px; font-family: var(--display); text-transform: uppercase;">Carnes</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo al Vino Tinto</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Plancha</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Filete Miñón</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Piedra Flameado</span> <strong>$4.00</strong>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(0,0,0,0.15); padding: 6px 0;">
+                            <span>Lomo a la Pimienta</span> <strong>$4.00</strong>
+                        </li>
+                    </ul>
             </div>
 
             <hr class="tour-divider">

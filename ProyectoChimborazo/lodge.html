@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Explore - Chimborazo Rey</title>
+    <title>Lodge - Chimborazo Rey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Caudex:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
      <header class="header-interior">
-        <!-- Bloque Izquierdo: Título y Menú debajo -->
         <div class="header-columna">
-            <h1>Chimborazo Travel Explore</h1>
+            <!-- AQUÍ ESTÁ EL CAMBIO: Tipografía Oswald, mayúsculas y negrita para el Lodge -->
+            <h1 style="font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 4vw, 2.5rem); text-transform: uppercase; letter-spacing: 0.05em; color: white; margin: 0; text-shadow: 0 4px 15px rgba(0,0,0,0.6);">
+                CHIMBORAZO LODGE
+            </h1>
             
-            <!-- Botón Hamburguesa (solo visible en móviles) -->
             <button class="menu-toggle" id="menu-toggle">☰ Menú</button>
             
             <nav class="nav-menu" id="nav-menu">
@@ -25,7 +29,6 @@
             </nav>
         </div>
 
-        <!-- Bloque Derecho: Selector de idiomas -->
         <div class="selector-idioma selector-interior">
             <img src="https://flagcdn.com/w40/us.png" alt="English" id="btn-en" class="bandera">
             <span class="separador">/</span>
@@ -33,14 +36,16 @@
         </div>
     </header>
 
-
    <main>
-    <h2 class="intro" style="color: white; margin-bottom: 3rem;" data-i18n="travel_title">NUESTRAS EXPEDICIONES Y TOURS</h2>
+    <!-- Corregido el título para que tenga sentido con el Lodge -->
+    <h2 style="color: white; margin-bottom: 3rem; text-align: center; font-family: var(--display); font-size: clamp(2rem, 4vw, 3rem); text-transform: uppercase; text-shadow: 0 4px 15px rgba(0,0,0,0.6);">
+        Un Refugio en las Alturas
+    </h2>
 
-    <!-- TOUR 1: Cumbre Chimborazo -->
+    <!-- HABITACIÓN 1 -->
     <article class="tour-card">
         <div class="tour-image-container">
-            <img src="Imagenes/Cumbre Volcan.jpeg" alt="Cumbre Chimborazo" class="tour-image">
+            <img src="Imagenes/cuarto grupal.png" alt="Cuarto Grupal" class="tour-image">
             <button class="btn-favorite">♡</button>
             <div class="tour-badge">
             </div>
@@ -49,8 +54,8 @@
         <div class="tour-details">
             <div class="tour-header">
                 <div class="tour-title-section">
-                    <h3 data-i18n="tour1_title">Cumbre Volcán Chimborazo</h3>
-                    <span data-i18n="tour1_loc">Reserva de Producción de Fauna Chimborazo</span></p>
+                    <h3 data-i18n="tour1_title">Habitación Grupal</h3>
+                    <span data-i18n="tour1_loc">Lodge Chimborazo Rey</span>
                 </div>
                 <div class="tour-rating">
                     <div class="rating-text">
@@ -65,15 +70,15 @@
 
             <div class="tour-highlights">
                 <div class="highlight-item">
-                    <span data-i18n="t1_h1">- Vista panorámica del Chimborazo y sus arenales</span>
+                    <span data-i18n="t1_h1">- Vista panorámica del Chimborazo</span>
                 </div>
                 <div class="highlight-item">
-                    <span data-i18n="level_high">- Nivel físico alto - técnico</span>
+                    <span data-i18n="level_high">- Camas confortables y térmicas</span>
                 </div>
                 <div class="highlight-item">
                 </div>
                 <div class="highlight-item">
-                    <span data-i18n="t1_h3"> - Páramo andino con flora y fauna endémica</span>
+                    <span data-i18n="t1_h3">- Ambiente cálido ideal para grupos</span>
                 </div>
             </div>
 
@@ -81,26 +86,26 @@
 
             <div class="tour-footer">
                 <div class="tour-includes">
-                    <div class="include-item"><span class="include-icon">🚌</span><span data-i18n="inc_transport">Transporte</span></div>
-                    <div class="include-item"><span class="include-icon">🧗‍♂️</span><span data-i18n="inc_guides">Guías ASEGUIM</span></div>
-                    <div class="include-item"><span class="include-icon">🛏️</span><span data-i18n="inc_lodging">Refugio</span></div>
-                    <div class="include-item"><span class="include-icon">🍽️</span><span data-i18n="inc_food">Alimentación</span></div>
+                    <div class="include-item"><span class="include-icon">🛏️</span><span>Camas</span></div>
+                    <div class="include-item"><span class="include-icon">🔥</span><span>Calefacción</span></div>
+                    <div class="include-item"><span class="include-icon">☕</span><span>Desayuno</span></div>
+                    <div class="include-item"><span class="include-icon">🚿</span><span>Ducha</span></div>
                 </div>
                 <div class="tour-price-action">
                     <div class="tour-price-info">
-                        <span class="price-label" data-i18n="price_label">Precio por persona</span>
-                        <span class="price-amount">US$300</span>
+                        <span class="price-label" data-i18n="price_label">Precio por noche</span>
+                        <span class="price-amount">US$150</span>
                     </div>
-                    <a href="#" class="btn-consultar" data-i18n="btn_consult">Consultar el tour</a>
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Disponibilidad</a>
                 </div>
             </div>
         </div>
     </article>
 
-    <!-- TOUR 2: Descenso en bicicleta -->
+    <!-- HABITACIÓN 2 -->
     <article class="tour-card">
         <div class="tour-image-container">
-            <img src="Imagenes/Decenso en Bicicleta.jpeg" alt="Descenso en Bicicleta" class="tour-image">
+            <img src="Imagenes/cuarto familiar.png" alt="Cuarto Familiar" class="tour-image">
             <button class="btn-favorite">♡</button>
             <div class="tour-badge">
             </div>
@@ -109,8 +114,8 @@
         <div class="tour-details">
             <div class="tour-header">
                 <div class="tour-title-section">
-                    <h3 data-i18n="tour2_title">Descenso en bicicleta del Chimborazo</h3>
-                    <span data-i18n="tour2_loc">Ruta del Hielo - Arenales</span></p>
+                    <h3 data-i18n="tour2_title">Habitación Familiar</h3>
+                    <span data-i18n="tour2_loc">Lodge Chimborazo Rey</span>
                 </div>
                 <div class="tour-rating">
                     <div class="rating-text">
@@ -125,13 +130,13 @@
 
             <div class="tour-highlights">
                 <div class="highlight-item">
-                    <span data-i18n="t2_h1">Aventura extrema sobre ruedas de 4800m a 3200m</span>
+                    <span data-i18n="t2_h1">- Espacio amplio para la familia</span>
                 </div>
                 <div class="highlight-item">
-                    <span data-i18n="level_mid">Nivel físico medio</span>
+                    <span data-i18n="level_mid">- Baño privado con agua caliente</span>
                 </div>
                 <div class="highlight-item">
-                    <span data-i18n="t2_h3">Vistas espectaculares de los volcanes aledaños</span>
+                    <span data-i18n="t2_h3">- Decoración rústica andina</span>
                 </div>
             </div>
 
@@ -139,26 +144,26 @@
 
             <div class="tour-footer">
                 <div class="tour-includes">
-                    <div class="include-item"><span class="include-icon">🚌</span><span data-i18n="inc_transport">Transporte</span></div>
-                    <div class="include-item"><span class="include-icon">🚵‍♂️</span><span data-i18n="inc_bikes">Bicicletas de montaña</span></div>
-                    <div class="include-item"><span class="include-icon">🛡️</span><span data-i18n="inc_safety">Equipo de seguridad</span></div>
-                    <div class="include-item"><span class="include-icon">🥪</span><span data-i18n="inc_boxlunch">Box Lunch</span></div>
+                    <div class="include-item"><span class="include-icon">🛏️</span><span>Camas</span></div>
+                    <div class="include-item"><span class="include-icon">🔥</span><span>Calefacción</span></div>
+                    <div class="include-item"><span class="include-icon">☕</span><span>Desayuno</span></div>
+                    <div class="include-item"><span class="include-icon">🚿</span><span>Ducha</span></div>
                 </div>
                 <div class="tour-price-action">
                     <div class="tour-price-info">
-                        <span class="price-label" data-i18n="price_label">Precio por persona</span>
-                        <span class="price-amount">US$75</span>
+                        <span class="price-label" data-i18n="price_label">Precio por noche</span>
+                        <span class="price-amount">US$120</span>
                     </div>
-                    <a href="#" class="btn-consultar" data-i18n="btn_consult">Consultar el tour</a>
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Disponibilidad</a>
                 </div>
             </div>
         </div>
     </article>
 
-    <!-- TOUR 3: Cumbre Carihuairazo -->
+    <!-- HABITACIÓN 3 -->
     <article class="tour-card">
         <div class="tour-image-container">
-            <img src="Imagenes/Cumbre carihuairazo.jpeg" alt="Cumbre Carihuairazo" class="tour-image">
+            <img src="Imagenes/cuarto matrimonial.png" alt="Cuarto Matrimonial" class="tour-image">
             <button class="btn-favorite">♡</button>
             <div class="tour-badge">
             </div>
@@ -167,8 +172,8 @@
         <div class="tour-details">
             <div class="tour-header">
                 <div class="tour-title-section">
-                    <h3 data-i18n="tour3_title">Cumbre Central Volcán Carihuairazo</h3>
-                    <span data-i18n="tour3_loc">Provincia de Tungurahua</span></p>
+                    <h3 data-i18n="tour3_title">Habitación Matrimonial</h3>
+                    <span data-i18n="tour3_loc">Lodge Chimborazo Rey</span>
                 </div>
                 <div class="tour-rating">
                     <div class="rating-text">
@@ -183,13 +188,13 @@
 
             <div class="tour-highlights">
                 <div class="highlight-item">
-                    <span data-i18n="t3_h1">Aclimatación ideal y escalada en glaciar (5018 msnm)</span>
+                    <span data-i18n="t3_h1">- Cama matrimonial King Size</span>
                 </div>
                 <div class="highlight-item">
-                    <span data-i18n="level_midhigh">Nivel físico medio - alto</span>
+                    <span data-i18n="level_midhigh">- Privacidad y confort total</span>
                 </div>
                 <div class="highlight-item">
-                    <span data-i18n="t3_h3">Caminata sobre nieve y cruce de grietas</span>
+                    <span data-i18n="t3_h3">- Vista directa hacia el nevado</span>
                 </div>
             </div>
 
@@ -197,29 +202,32 @@
 
             <div class="tour-footer">
                 <div class="tour-includes">
-                    <div class="include-item"><span class="include-icon">🚌</span><span data-i18n="inc_transport">Transporte</span></div>
-                    <div class="include-item"><span class="include-icon">🧗‍♂️</span><span data-i18n="inc_guides">Guías expertos</span></div>
-                    <div class="include-item"><span class="include-icon">⛏️</span><span data-i18n="inc_equipment">Equipo técnico</span></div>
-                    <div class="include-item"><span class="include-icon">🍽️</span><span data-i18n="inc_food">Alimentación</span></div>
+                    <div class="include-item"><span class="include-icon">🛏️</span><span>Cama King</span></div>
+                    <div class="include-item"><span class="include-icon">🔥</span><span>Calefacción</span></div>
+                    <div class="include-item"><span class="include-icon">☕</span><span>Desayuno</span></div>
+                    <div class="include-item"><span class="include-icon">🚿</span><span>Ducha</span></div>
                 </div>
                 <div class="tour-price-action">
                     <div class="tour-price-info">
-                        <span class="price-label" data-i18n="price_label">Precio por persona</span>
-                        <span class="price-amount">US$150</span>
+                        <span class="price-label" data-i18n="price_label">Precio por noche</span>
+                        <span class="price-amount">US$80</span>
                     </div>
-                    <a href="#" class="btn-consultar" data-i18n="btn_consult">Consultar el tour</a>
+                    <a href="https://wa.me/593968596592" target="_blank" class="btn-consultar">Consultar Disponibilidad</a>
                 </div>
             </div>
         </div>
     </article>
 </main>
-<footer>
+
+    <footer>
         <div class="footer-content">
-            <h3>Contacto y Ubicación</h3>
-            <p><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
-            <p><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
+            <h3 data-i18n="footer_title">Contacto y Ubicación</h3>
+            <p data-i18n="footer_email"><strong>Correo electrónico:</strong> gustavocc1982@hotmail.com</p>
+            <p data-i18n="footer_loc"><strong>Ubicación:</strong> Vía Guaranda-Ambato, Prov. Bolívar (Sector Cruz del Arenal a las faldas del nevado Chimborazo).</p>
         </div>
     </footer>
-</body>
 
+    <!-- CONEXIÓN CON JAVASCRIPT AÑADIDA -->
+    <script src="min.js"></script>
+</body>
 </html>
